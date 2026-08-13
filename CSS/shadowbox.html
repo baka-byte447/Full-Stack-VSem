@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        #box{
+            width:100px;
+            height:100px;
+            background-color: white;
+            margin-left:10%;
+            /* box-shadow: inset 5px 5px 5px 5px #4d4d4da1; */
+            filter: drop-shadow(2px 0px 0px linear-gradient(red blue yellow))
+        }
+
+        p{
+            text-align: center;
+            padding-top:5%;
+            font-size:30px;
+            text-shadow: 5px 5px mediumblue, 10px 10px magenta, 15px 15px rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box">
+            <p>Nananana</p>
+        </div>
+    </div>
+</body>
+</html>

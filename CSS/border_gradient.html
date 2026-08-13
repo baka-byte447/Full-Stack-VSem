@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Gradient</title>
+
+    <style>
+        .container{
+            margin:0px;
+            height:100%;
+            width:100%;
+
+        }
+
+        .border-box{
+            height:500px;
+            width:500px;
+            display: flex;
+            background: conic-gradient(violet, indigo, blue, green, yellow, red, violet);
+            border: 1px solid black;
+            border-radius:10%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .padding-box{
+            border-radius:10%;
+            height:480px;
+            width:480px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background: black;
+        }
+
+        p{
+            font-size:50px;
+            text-align:center;
+            margin:0;
+            background: linear-gradient(90deg, pink, magenta);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="border-box">
+            <div class="padding-box">
+                <p>This Beautiful grassy box is created by Milan</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
