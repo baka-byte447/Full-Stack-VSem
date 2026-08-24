@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            align-items: center;
+        }
+
+        #myId{
+            background-color: blueviolet;
+        }
+
+        .myClass{
+            
+            color:pink
+        }
+
+        input[type="email"]{
+            border-radius: 15px;
+            color:yellowgreen;
+        }
+
+        h2{
+            font-size: 4rem;
+        }
+
+        ul>li.myClass>span{
+            background-color: red;
+            color:white;
+        }
+
+        h3>p{
+            border: 2px dashed blue;
+        }
+
+        div p{
+            color:lime;
+        }
+
+        h3>span ~p{
+            color:saddlebrown
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="myClass">Universal *</li>
+        <li id="myId">id </li>
+        <li class="myClass">class</li>
+        <li>
+            <input type="email" placeholder="Your Email">
+            <input type="password" placeholder="Your Secret ">
+        </li>
+        <li><h2>Element Name</h2></li>
+        nb<li>
+            <span> Combinators 123</span>
+            <div><p>Space combination</p></div>
+            <h3><p>+ combination</p></h3>
+            <h3><span><p>~ combination</p></span></h3>
+
+        </li>
+        <li></li>
+        <li></li>
+    </ul>
+
+</body>
+</html>
