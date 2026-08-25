@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+
+    <style>
+        button{
+            height:100px;
+            width:180px;
+            background-color: whitesmoke;
+        }
+        button:hover{
+            background-color: violet;
+        }
+
+        button:active{
+            background-color: black;
+            color:white;
+        }
+
+        button:focus{
+            border:5px solid crimson;
+        }
+
+        a{
+            text-decoration: none;
+            color:whitesmoke;
+            background-color: black;
+            padding:0.5rem;
+        }
+
+        a:visited{
+            color:lime;
+        }
+
+        a:hover{
+            color:black;
+            background-color: aliceblue;
+        }
+
+        input{
+            height:50px;
+            width: 50px;
+        }
+
+        input:checked{
+            box-shadow: 1px 1px 5px black;
+            accent-color: magenta;
+        }
+        
+        li{
+            background-color: grey;
+            color:white
+        }
+        li:nth-child(3){
+            background-color: #004;
+        }
+        li:nth-child(even){
+            background-color: black;
+        }
+        li:nth-child(3n){
+            text-align: center;
+        }
+
+        li:nth-child(n+4, -n+6){
+        }
+    </style>
+</head>
+<body>
+    <button>Push Harder!!</button><br><br>
+    <div>
+        <a href="#">Click for good luck</a>
+    </div>
+<br> <br>
+    <div>
+        <input type="checkbox">
+    </div>
+    <div>
+        <input type="checkbox">
+    </div>
+
+    <div>
+        <input class="text" type="text" style="width:500px">
+    </div>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+</body>
+</html>
