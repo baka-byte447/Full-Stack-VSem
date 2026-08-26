@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Punjabi Muchh</title>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #eee;
+        }
+
+        .muchh {
+            position: relative;
+            width: 20px;
+            height: 80px;
+        }
+
+        /* Common style */
+        .muchh::before,
+        .muchh::after {
+            content: "";
+            position: absolute;
+
+            width: 130px;
+            height: 45px;
+
+            background: #111;
+
+            top: 20px;
+        }
+
+        /* Left side */
+        .muchh::before {
+            right: 5px;
+
+            border-radius: 100% 20% 100% 10%;
+
+            transform: rotate(12deg);
+            transform-origin: right center;
+        }
+
+        /* Right side */
+        .muchh::after {
+            left: 5px;
+
+            border-radius: 20% 100% 10% 100%;
+
+            transform: rotate(-12deg);
+            transform-origin: left center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="muchh"></div>
+
+</body>
+</html>
