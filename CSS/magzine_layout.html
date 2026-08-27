@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JamnaPaar Times</title>
+
+    <style>
+        @font-face {
+            font-family: MainHEADING;
+            src: url(fonts/WesternBangBang-Regular.ttf);
+        }
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body {
+            background: #e8e8e8;
+            color: #111;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .magazine {
+            width: 900px;
+            max-width: 95%;
+            margin: 30px auto;
+            padding: 15px;
+
+            background: #f8f8f5;
+            border: 2px solid #111;
+        }
+        .mainHEADING{
+            display: flex;
+        }
+        h1{
+            flex:1;
+            font-family:MainHEADING;
+            letter-spacing: 1.2rem;
+            font-size: 4rem;
+            text-align: center;
+        }
+        hr{
+            margin: 0.3rem;
+        }
+
+        .Calender {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div class="magazine">
+        <div class="mainHEADING">
+            <h1>JAMNAPAAR TIMES</h1>
+        </div>
+        <hr style=" border:2px solid black;">
+        <div class="Calender">
+            <p>WEDNESDAY OCTOBER 31, 2026</p> <p style="text-align: right;">$0.35</p>
+        </div>
+        <hr style=" border:2px solid black;">
+    </div>
+</body>
+</html>
+
