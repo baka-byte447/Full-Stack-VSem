@@ -3,40 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
+    <title>Document</title>
+
     <style>
-        .navbar{
-            display:flex;
-            margin: auto;
-            border: 2px solid blue;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        .logo{
-            flex:1
-        }
-        .nav-buttons{
+        nav{
             display: flex;
-            list-style-type: none;
-            flex:1;
-            column-gap: 10%;
+            height: 10%;
+            outline: 2px solid black;
+            justify-content: space-between;
+            padding: 1%;
+            box-shadow: 6px 6px 0 orange;
+        }
+        nav>img{
+            flex: 2 1 1;
+            max-height: 40px;
+            max-width:140px;
         }
 
+        nav ul{
+            flex:2 2 2;
+            display: flex;
+            list-style-type: none;
+            width: 50%;
+            justify-content: space-between;
+        }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">
-            LOGO
-        </div>
-        <div class="nav-buttons">
-            <ul>
-                <li>Home</li>
-                <li>Products</li>
-                <li>Support</li>
-                <li>About</li>
-            </ul>
-        </div>
-    </div>
+    <nav>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV_tCSk5uYa3VKwNVe0ifgpUGRzAqieG9U1250zXHqklZfJzoMulRoFnkP&s=10" alt="">
+        <ul>
+            <li>Home</li>
+            <li>Catalog</li>
+            <li>Reviews</li>
+            <li>Donate</li>
+        </ul>
+    </nav>
 </body>
 </html>

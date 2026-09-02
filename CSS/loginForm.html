@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV Center</title>
+    
+
+    <style>
+
+        @font-face {
+            font-family: formfont;
+            src: url(fonts/WesternBangBang-Regular.ttf);
+        }
+
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .parent-container {
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            height: 100vh;           
+            background-color:antiquewhite;
+        }
+
+        .child-box {
+            background-color: #007bff;
+            color: black;
+            padding: 20px;
+            border-radius: 8px;
+            min-width: 300px;
+            max-width:300px;
+
+        }
+        .child-box>h1{
+            font-family:formfont;
+            text-align: center;
+
+        }
+
+        .input input{
+            display: block;
+            margin:auto;
+            margin-top:5%;
+            border-radius: 0px;
+            box-shadow:3px 3px 0 black;
+            font-size:20px;
+        }
+
+        input[type:"submit"]{
+            margin-top:7%;
+        }
+
+        .child-box>a:link{
+            text-decoration: none;
+            color:black;
+            border:1px solid magenta;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent-container">
+        <div class="child-box">
+            <h1>Login</h1>
+            <div class="input">
+                <label for="mail">Email</label>
+                    <input type="email">
+                <label for="pw">Password</label>
+                    <input type="password">
+            </div>
+
+            <a href="#">login</a>
+
+        </div>
+    </div>
+
+</body>
+</html>

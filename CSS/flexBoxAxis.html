@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis</title>
+
+    <style>
+        .container{
+            flex-direction: row;  /*main axis depends on flex direction ||default main axis is row based horizontal||*/
+            outline: 3px solid black;
+            display:flex;
+            height:90vh;
+            justify-content: space-between; /*main axis*/
+            align-items:center; /*cross axis*/
+        }
+
+        .container>div{
+            color:aliceblue;
+            height:100px;
+            width:1000px;
+            flex-wrap: wrap;
+        }
+
+        #box1{
+            background-color: orange;
+            flex-basis: 90px; /*sets the initial main size of a flex item. it sets the size of the content box uless otherwise set with box sizing||controls the size of the element throught the main axis||*/
+            flex-grow:2; /*we can define ratio of remaining space left of the container to all the boxes||if remaining space is 400px then here box 1 will take 200px and remaining two boxes takes 100px each||*/
+        }
+
+        #box2{
+            background-color:blueviolet;
+            flex:1 1 1200px; /*shorthand for flex-grow flex-shrink flex-basis*/
+        }
+
+        #box3{
+            background-color: teal;
+            flex-basis: auto;
+            /*flex grow and shrink will allow elemnents to grow or shrink if the container size is extra or less*/
+            flex:1 1 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1">1</div>
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+    </div>
+</body>
+</html>

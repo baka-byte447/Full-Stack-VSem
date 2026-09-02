@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Layout</title>
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            display:flex;
+            width:100%;
+            min-height:100vh;
+        }
+
+        .navbar{
+            display: flex;
+            background-color: crimson;
+            flex-direction:column;
+            flex:0 0 220px;
+            justify-content: center;
+            height:100vh;
+            box-sizing:border-box;
+            border:3px solid black;
+        }
+        .page{
+            flex:1;
+            min-width:0;
+            min-height:100vh;
+            box-sizing:border-box;
+            border:1px solid black;
+        }
+        .logo{
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .items{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height:50%
+        }
+        img{
+            display: inline;
+            height:30px;
+            width:30px;
+        }
+        .menu{
+            border:2px solid black;
+            min-height:2rem;
+            min-width:100%;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        .cards{
+            display: 
+        }
+        .card{
+            min-height: 10rem;
+            min-width:10vw;
+            border:2px solid black;
+            margin:2rem;
+            border-radius:10px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo"><h2><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkhxL7U4AdfMtmpnQs3B219uWeUj2r-YO39Kmj3yqaA&s=10" alt=""> Bayern Munich</h2></div>
+            <div class="items">
+                <div class="item">Home</div>
+                <div class="item">Services</div>
+                <div class="item">Contact</div>
+                <div class="item">About</div>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="menu">
+                <div class="head"><h3>Milan Shawrma</h3></div>
+                <div class="dropdown"><ul><li><input type="text"    ></li></ul></div>
+            </div>
+            <div class="cards">
+                <div class="card">1</div>
+                <div class="card">2</div>
+                <div class="card">3</div>
+                <div class="card">4</div>
+            </div>
+            <div class="table"></div>
+        </div>
+    </div>
+</body>
+</html>
