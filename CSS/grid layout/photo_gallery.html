@@ -6,35 +6,61 @@
     <title>Photo GAllery</title>
 
     <style>
-        .container{
-            display:grid;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap:2%
+        * {
+            box-sizing: border-box;
         }
 
-        .box{
-            border:2px solid black;
-            height:200px;
-            background-color: seashell;
+        body {
+            margin: 0;
+
+            background: #f4f1eb;
+            color: #202522;
+            font-family: Georgia, serif;
         }
+
+        h1 {
+            margin: 0 0 1.5rem;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+            gap:4rem;
+            max-width: 1200px;
+            min-widht:400px;
+            margin: 0 auto;
+        }
+
+        .box {
+            display: grid;
+            min-width:300px;
+            min-height:300px;
+            border-radius: 0.5rem;
+            background: #d9b08c;
+            color: #33251c;
+            
+        }
+
+        
     </style>
 </head>
 <body>
+    <h1>Photo Gallery</h1>
     <div class="container">
 
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
 
     </div>
 </body>

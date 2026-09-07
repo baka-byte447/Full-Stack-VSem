@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive dash</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows:repeat(4,1fr);
+            grid-template-columns:repeat(4, 1fr);
+            grid-template-areas:
+                "header header header header"
+                "sidebar stat stat stat"
+                "sidebar stat stat stat"
+                "sidebar orders orders activity"
+                "sidebar orders orders activity"
+                "footer footer footer footer"
+        }
+
+        .box{
+            border:1px solid black;
+            border-radius: 4px;
+            min-height:150px;   
+            }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box header" style="grid-area:header"><h1>HEADER</h1></div>
+        <div class="box sidebar" style="grid-area:sidebar"><h1>SIDEBAR</h1></div>
+        <div class="box stat" style="grid-area:stat"><h1>STAT</h1></div>
+        <div class="box orders" style="grid-area:orders"><h1>RECENT ORDERS</h1></div>
+        <div class="box activity" style="grid-area:activity"><h1>ACTIVITY</h1></div>
+        <div class="box footer" style="grid-area:footer"><h1>FOOTER</h1></div>
+
+    </div>
+</body>
+</html>
