@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent_child Grid</title>
+
+    <style>
+
+        :root{
+            --primary:orange;
+            --secondary:black;
+            --text-size: 20px;
+            --multiplier: 5;
+        }
+
+        .child2{
+            --primary:red;
+            --secondary:magenta;
+        }
+
+        .child{
+            background-color: var(--secondary);
+            grid-column:1/2;
+            grid-row:1/2;
+        }
+
+
+        p{
+            font-size:calc(var(--text-size)*var(--multiplier));
+            background-color: var(--primary);
+            color:var(--secondary)
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child"><p>Charlie Kirk</p></div>
+        <div class="child2"><p>Charlie Kirk</p></div>
+
+    </div>
+</body>
+</html>

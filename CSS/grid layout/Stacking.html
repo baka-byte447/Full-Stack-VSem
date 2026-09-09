@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacking</title>
+
+    <style>
+        .container{
+            display: grid;
+            outline: 1px solid black;
+            height:500px;
+            width:500px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .container>div{
+            outline:1px dashed grey;
+        }
+
+        #box1{
+            background-color: blue;
+            grid-column-start: 1;
+            grid-column-end:3; /*counts from left border of the div boxes*/
+            grid-row: 1/3; /*short hand start/end*/
+            z-index:0; /*This is called Stacking*/
+        }
+
+        #box6{
+            grid-column:2/3;
+            grid-row:1/2;
+            background-color: orange;
+            z-index:1; /*larger value will appear more outwards*/
+        }
+
+        .parent{
+            font-size:30px;
+            background-color: blue;
+        }
+
+        .child{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="parent"><div class="child">1</div></div>
+        <div id="box1">1</div>
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+        <div id="box4">4</div>
+        <div id="box5">5</div>
+        <div id="box6">6</div>
+
+    </div>
+</body>
+</html>
