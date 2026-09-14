@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM</title>
+
+    <style>
+        .card{
+            outline:1px solid darkred;
+            width:600px;
+            padding:3%;
+            margin:auto;
+            box-shadow:3px 3px 5px grey;
+            justify-content: center;
+        }
+
+        .card__text{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight:900;
+            font-size: 1.5rem;
+        }
+
+        .card__btn__submit{
+            background-color: black;
+            color:whitesmoke;
+            width:100px;
+            height:100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/34/2d/28/caption.jpg?w=500&h=-1&s=1&cx=662&cy=604&chk=v1_8984ddf3493edfb8c896" alt="" class="card__img">
+        <p class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi fugiat quia dolor earum deserunt molestiae laboriosam ad delectus ipsa mollitia nihil quos ratione cupiditate voluptas, itaque quas, blanditiis doloremque accusantium.</p>
+        <button class="card__btn__submit">SUBMIT</button>
+    </div>
+</body>
+</html>
