@@ -3,20 +3,17 @@
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-      "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-300: oklch(87.9% 0.169 91.605);
+    --color-black: #2A140E;
+    --color-white: #fff;
     --spacing: 0.25rem;
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
     --font-weight-bold: 700;
-    --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-coffee-roasted: #704341;
   }
 }
 @layer base {
@@ -30,9 +27,9 @@
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     tab-size: 4;
-    font-family: var(--default-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
-    font-feature-settings: var(--default-font-feature-settings, normal);
-    font-variation-settings: var(--default-font-variation-settings, normal);
+    font-family: Graphik, sans-serif;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
     -webkit-tap-highlight-color: transparent;
   }
   hr {
@@ -167,109 +164,61 @@
     display: none !important;
   }
 }
-@layer utilities {
-  .container {
-    width: 100%;
-    @media (width >= 40rem) {
-      max-width: 40rem;
-    }
-    @media (width >= 48rem) {
-      max-width: 48rem;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem;
-    }
-    @media (width >= 96rem) {
-      max-width: 96rem;
-    }
+@layer utilities;
+* {
+  margin: calc(var(--spacing) * 2);
+}
+.heading {
+  margin: calc(var(--spacing) * 10);
+  background-color: var(--color-coffee-roasted);
+  text-align: center;
+  font-size: var(--text-6xl);
+  line-height: var(--tw-leading, var(--text-6xl--line-height));
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+  text-decoration-line: underline;
+}
+.out-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media (width >= 500px) {
+    background-color: #ffc82c;
   }
-  .flex {
-    display: flex;
+  @media (width >= 1080px) {
+    background-color: var(--color-black);
   }
-  .table {
-    display: table;
+  @media (prefers-color-scheme: dark) {
+    background-color: #8492a6;
   }
-  .h-\[100vh\] {
-    height: 100vh;
-  }
-  .w-100 {
-    width: calc(var(--spacing) * 100);
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
-  }
-  .flex-col {
-    flex-direction: column;
-  }
-  .flex-row {
-    flex-direction: row;
-  }
-  .justify-around {
-    justify-content: space-around;
-  }
-  .justify-between {
-    justify-content: space-between;
-  }
-  .justify-center {
-    justify-content: center;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
-  .border-5 {
-    border-style: var(--tw-border-style);
-    border-width: 5px;
-  }
-  .border-solid {
-    --tw-border-style: solid;
-    border-style: solid;
-  }
-  .bg-amber-300 {
-    background-color: var(--color-amber-300);
-  }
-  .p-4 {
-    padding: calc(var(--spacing) * 4);
-  }
-  .text-center {
-    text-align: center;
-  }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
+  @media (prefers-color-scheme: dark) {
+    color: var(--color-white);
   }
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
+.in-div {
+  height: 100vh;
+  width: calc(var(--spacing) * 100);
+  border-style: var(--tw-border-style);
+  border-width: 5px;
+  --tw-border-style: solid;
+  border-style: solid;
+  background-color: var(--color-amber-300);
+  padding: calc(var(--spacing) * 4);
+}
+img {
+  width: calc(var(--spacing) * 32);
+  @media (width >= 500px) {
+    width: calc(var(--spacing) * 64);
+  }
+  @media (width >= 1080px) {
+    width: calc(var(--spacing) * 100);
+  }
 }
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
+@property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
@@ -277,9 +226,8 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
+      --tw-border-style: solid;
     }
   }
 }

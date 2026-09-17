@@ -1,1 +1,35 @@
 @import "tailwindcss";
+@config "../tailwind.config.js";
+
+@theme{
+    --color-black: #2A140E;
+    --color-purple: #7e5bef;
+    --color-pink: #ff49db;
+    --color-coffee-roasted: #704341;
+    --color-coffee-normal: "abababa";
+
+    --breakpoint-*:initial;
+    --breakpoint-md:500px;
+    --breakpoint-lg: 1080px; /*custom breakpoint value for screen width*/
+
+} /* IN TAILWIND 4 ONWARDS tailwind.config.js is depreciated and this @theme is used for applying default theme and customization*/
+
+*{
+    @apply m-2 ;
+}
+
+.heading{
+    @apply m-10 text-6xl font-bold underline text-center bg-coffee-roasted;
+}
+
+.out-div{
+    @apply flex flex-row justify-between lg:bg-black md:bg-yellow dark:bg-gray dark:text-white;
+}
+
+.in-div{
+    @apply bg-amber-300 border-5 border-solid p-4 w-100 h-[100vh];
+}
+
+img{
+    @apply w-32 md:w-64 lg:w-100
+}
