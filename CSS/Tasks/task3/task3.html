@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Analytics Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-100 text-slate-900">
+    <div class="flex min-h-screen">
+        <aside
+            class="hidden md:flex w-60 bg-slate-900 text-slate-300 flex-col p-5 sticky top-0 h-screen justify-between">
+            <div>
+                <h1 class="text-xl font-bold text-white mb-8">
+                    AdminPro
+                </h1>
+                <nav class="text-sm">
+                    <a href="#" class="block bg-indigo-600 text-white px-3 py-2 rounded-lg mb-2">
+                        🏠 Dashboard
+                    </a>
+                    <a href="#" class="block px-3 py-2 rounded-lg hover:bg-slate-800 mb-2">
+                        📊 Analytics
+                    </a>
+                    <a href="#" class="block px-3 py-2 rounded-lg hover:bg-slate-800 mb-2">
+                        👥 Users
+                    </a>
+                    <a href="#" class="block px-3 py-2 rounded-lg hover:bg-slate-800 mb-2">
+                        🛒 Orders
+                    </a>
+                    <a href="#" class="block px-3 py-2 rounded-lg hover:bg-slate-800 mb-2">
+                        📦 Products
+                    </a>
+                    <a href="#" class="block px-3 py-2 rounded-lg hover:bg-slate-800">
+                        ⚙ Settings
+                    </a>
+                </nav>
+            </div>
+            <div class="border border-slate-700 rounded-lg p-3 text-center">
+                <div
+                    class="w-9 h-9 bg-indigo-500 rounded-full mx-auto mb-2 flex items-center justify-center text-white">
+                    AT
+                </div>
+                <p class="text-white text-sm font-semibold">
+                    Donald Trump
+                </p>
+                <p class="text-xs text-slate-400">
+                    Admin
+                </p>
+            </div>
+        </aside>
+        <div class="flex-1 min-w-0">
+            <header class="h-16 bg-white border-b border-slate-200 px-5 md:px-8 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <button class="md:hidden text-xl">
+                        ☰
+                    </button>
+                    <h2 class="text-xl md:text-2xl font-bold">
+                        Dashboard
+                    </h2>
+                </div>
+                <div class="flex items-center gap-4">
+                    <input type="text" placeholder="Search..."
+                        class="hidden sm:block border border-slate-200 rounded-lg px-3 py-2 text-sm w-40 md:w-52">
+                    <span class="text-slate-600">
+                        🔔
+                    </span>
+                    <div class="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center">
+                        👤
+                    </div>
+                </div>
+            </header>
+            <main class="p-5 md:p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white border border-slate-200 rounded-xl p-5">
+                        <p class="text-sm text-slate-500">
+                            Total Revenue
+                        </p>
+                        <h3 class="text-2xl font-bold mt-2">
+                            $436,990
+                        </h3>
+                        <p class="text-xs text-green-600 mt-2">
+                            ↑ 12% from last month
+                        </p>
+                    </div>
+                    <div class="bg-white border border-slate-200 rounded-xl p-5">
+                        <p class="text-sm text-slate-500">
+                            Total Orders
+                        </p>
+                        <h3 class="text-2xl font-bold mt-2">
+                            892
+                        </h3>
+                        <p class="text-xs text-green-600 mt-2">
+                            ↑ 6% from last month
+                        </p>
+                    </div>
+                    <div class="bg-white border border-slate-200 rounded-xl p-5">
+                        <p class="text-sm text-slate-500">
+                            Active Users
+                        </p>
+                        <h3 class="text-2xl font-bold mt-2">
+                            3,521
+                        </h3>
+                        <p class="text-xs text-green-600 mt-2">
+                            ↑ 14% from last month
+                        </p>
+                    </div>
+                    <div class="bg-white border border-slate-200 rounded-xl p-5">
+                        <p class="text-sm text-slate-500">
+                            Conversion Rate
+                        </p>
+                        <h3 class="text-2xl font-bold mt-2">
+                            4.2%
+                        </h3>
+                        <p class="text-xs text-green-600 mt-2">
+                            ↑ 2% from last month
+                        </p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-6 mt-6">
+                    <div class="bg-white border border-slate-200 rounded-xl p-5">
+                        <div class="flex justify-between items-center mb-5">
+                            <div>
+                                <h3 class="font-semibold">
+                                    Revenue Overview
+                                </h3>
+                                <p class="text-sm text-slate-500">
+                                    Monthly revenue
+                                </p>
+                            </div>
+                            <p class="font-bold">
+                                $436,990 </p>
+                        </div>
+                        <div class="h-52 flex items-end justify-between gap-3 border-b border-slate-200">
+                            <div class="bg-indigo-400 w-8 h-12 rounded-t"></div>
+                            <div class="bg-indigo-400 w-8 h-16 rounded-t"></div>
+                            <div class="bg-indigo-400 w-8 h-20 rounded-t"></div>
+                            <div class="bg-indigo-400 w-8 h-28 rounded-t"></div>
+                            <div class="bg-indigo-500 w-8 h-24 rounded-t"></div>
+                            <div class="bg-indigo-500 w-8 h-32 rounded-t"></div>
+                            <div class="bg-indigo-500 w-8 h-36 rounded-t"></div>
+                            <div class="bg-indigo-600 w-8 h-44 rounded-t"></div>
+                        </div>
+                        <div class="flex justify-between text-xs text-slate-400 mt-2">
+                            <span>Jan</span>
+                            <span>Feb</span>
+                            <span>Mar</span>
+                            <span>Apr</span>
+                            <span>May</span>
+                            <span>Jun</span>
+                            <span>Jul</span>
+                            <span>Aug</span>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-slate-200 rounded-xl p-5 min-w-0">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="font-semibold">
+                                Recent Orders
+                            </h3>
+                            <a href="#" class="text-xs text-indigo-600">
+                                View all
+                            </a>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full min-w-[400px] text-sm">
+                                <thead>
+                                    <tr class="text-left text-slate-500 border-b">
+                                        <th class="pb-3">
+                                            Customer
+                                        </th>
+                                        <th class="pb-3">
+                                            Amount
+                                        </th>
+                                        <th class="pb-3">
+                                            Status
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="py-3">
+                                            Rahul Sharma
+                                        </td>
+                                        <td>
+                                            $2,499
+                                        </td>
+                                        <td>
+                                            <span class="text-green-600 text-xs">
+                                                Delivered
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="py-3">
+                                            Priya Singh
+                                        </td>
+                                        <td>
+                                            $4,099
+                                        </td>
+                                        <td>
+                                            <span class="text-blue-600 text-xs">
+                                                Processing
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="py-3">
+                                            Amit Kumar
+                                        </td>
+                                        <td>
+                                            $1,299
+                                        </td>
+                                        <td>
+                                            <span class="text-blue-600 text-xs">
+                                                Shipped
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3">
+                                            Neha Gupta
+                                        </td>
+                                        <td>
+                                            $3,799
+                                        </td>
+                                        <td>
+                                            <span class="text-green-600 text-xs">
+                                                Delivered
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+                    <div class="bg-white border border-slate-200 rounded-xl p-5">
+                        <div class="flex justify-between items-center mb-5">
+                            <div>
+                                <h3 class="font-semibold">
+                                    Traffic Overview
+                                </h3>
+                                <p class="text-sm text-slate-500">
+                                    Total Visitors
+                                </p>
+                            </div>
+                            <p class="text-green-600 text-sm font-semibold">
+                                ↑ 18%
+                            </p>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-5">
+                            8,432
+                        </h3>
+                        <div class="h-40 flex items-end justify-between gap-2">
+                            <div class="bg-indigo-300 w-6 h-12 rounded-t"></div>
+                            <div class="bg-indigo-400 w-6 h-20 rounded-t"></div>
+                            <div class="bg-indigo-400 w-6 h-16 rounded-t"></div>
+                            <div class="bg-indigo-500 w-6 h-28 rounded-t"></div>
+                            <div class="bg-indigo-500 w-6 h-24 rounded-t"></div>
+                            <div class="bg-indigo-500 w-6 h-32 rounded-t"></div>
+                            <div class="bg-indigo-600 w-6 h-36 rounded-t"></div>
+                            <div class="bg-indigo-600 w-6 h-40 rounded-t"></div>
+                        </div>
+                        <div class="flex justify-between text-xs text-slate-400 mt-2">
+                            <span>Mon</span>
+                            <span>Tue</span>
+                            <span>Wed</span>
+                            <span>Thu</span>
+                            <span>Fri</span>
+                            <span>Sat</span>
+                            <span>Sun</span>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-slate-200 rounded-xl p-5">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="font-semibold">
+                                Top Products
+                            </h3>
+                            <a href="#" class="text-xs text-indigo-600">
+                                View all
+                            </a>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full min-w-[400px] text-sm">
+                                <thead>
+                                    <tr class="text-left text-slate-500 border-b">
+                                        <th class="pb-3">
+                                            Product
+                                        </th>
+                                        <th class="pb-3">
+                                            Sales
+                                        </th>
+                                        <th class="pb-3">
+                                            Change
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="py-3">
+                                            Laptop Pro
+                                        </td>
+                                        <td>
+                                            2,450
+                                        </td>
+                                        <td class="text-green-600">
+                                            +12%
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="py-3">
+                                            Wireless Earbuds
+                                        </td>
+                                        <td>
+                                            1,890
+                                        </td>
+                                        <td class="text-green-600">
+                                            +8%
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="py-3">
+                                            Smart Watch
+                                        </td>
+                                        <td>
+                                            1,203
+                                        </td>
+                                        <td class="text-green-600">
+                                            +6%
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3">
+                                            Backpack
+                                        </td>
+                                        <td>
+                                            982
+                                        </td>
+                                        <td class="text-green-600">
+                                            +4%
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
