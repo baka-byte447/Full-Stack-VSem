@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: teal;
+            
+        }
+        .nav{        
+            color:whitesmoke;
+            border:1px solid black;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        hr{
+            border:2px solid black;
+        }
+        h1{
+            font-size: 4rem;
+            font-weight:500;
+        }
+        .info{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            border:1px solid whitesmoke;
+            border-radius: 10px;
+            
+        }
+        .nav-buttons{
+            display:flex;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            align-items: center;
+            justify-content:center;
+            color:antiquewhite;
+
+        }
+        .nav-buttons button{
+            background-color: blueviolet;
+            border:2px solid black;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .QUESTION{
+            display: flex;
+            border:4px solid honeydew;
+            border-radius:14px;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <h1>Quizzeriaa</h1>
+            <p>Your home to Javascript quests</p>
+        </div>
+        <hr>
+        <div class="QUESTION">
+            <div class="info">
+            <p class="ques-num"></p>
+            <p class="score">Score: </p>
+            <p class="timer">Time: </p>
+        </div>
+        <div class="question-box">
+            <p class="ques">
+                Here will appear the questions;
+            </p>
+        </div>
+        </div>
+        <div class="options">
+            <div class="A">
+                <buttton class="A"></buttton>
+            </div>
+            <div class="B">
+                <button class="B"></button>
+            </div>
+            <div class="C">
+                <button class="C"></button>
+            </div>
+            <div class="D">
+                <button class="D"></button>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <button>Save & Next</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

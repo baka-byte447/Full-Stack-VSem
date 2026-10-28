@@ -1,0 +1,1 @@
+made javascipt in 10 days while working for scripting language for Netscape browser

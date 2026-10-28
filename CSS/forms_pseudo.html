@@ -27,10 +27,7 @@
             box-shadow: 0 0 3px black;
         }
 
-        input:disabled{
-            background-color: lightgrey;
-            border-width:0px
-        }
+        
 
         input[type="email"]:valid{
             border-color:skyblue;
@@ -55,11 +52,16 @@
             border-width:0px;
             box-shadow:0 0 0 transparent;
             background:grey;
-            color:white;
+            color:pink;
         }
 
         input:not(:required){
             font-style: italic;
+        }
+        input:disabled{
+            background-color: lightgrey;
+            border-width:0px;
+            color:red;
         }
     </style>
 </head>
