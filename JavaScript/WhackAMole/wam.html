@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack A Mole!!</title>
+    <style>
+        .cell{
+            height:100px;
+            width:100px;
+            background-color: #fff;
+            border:2px solid black;
+        }
+        .grid{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Whack-a-Mole</h2>
+
+    <p>Score: <span id="score">0</span></p>
+    <p>Time Left: <span id="time">30</span> seconds</p>
+
+    <button id="startBtn">Start Game</button><br><br>
+
+    <div id="grid"></div>
+
+    <p id="message"></p>
+
+    <script src="wam.js"></script>
+</body>
+</html>
